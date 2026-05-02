@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  --background: #0d1117;
+  --surface: #161b22;
+  --surface-elevated: #1f2937;
+  --muted: #8b949e;
+  --text: #f0f6fc;
+  --primary: #2f81f7;
+  --success: #238636;
+  --danger: #da3633;
+  --border: #30363d;
+}
+
+* {
+  border-color: var(--border);
+}
+
+html,
+body {
+  background: var(--background);
+  color: var(--text);
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Space Grotesk", "Sora", "Manrope", "Segoe UI", sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+.grid-glow {
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(47, 129, 247, 0.2), transparent 35%),
+    radial-gradient(circle at 80% 0%, rgba(35, 134, 54, 0.15), transparent 25%),
+    linear-gradient(180deg, rgba(48, 54, 61, 0.3), rgba(13, 17, 23, 1));
+}
